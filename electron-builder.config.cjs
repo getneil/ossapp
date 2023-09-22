@@ -6,7 +6,7 @@ const _ = require("lodash");
 const appBundleId = "xyz.tea.gui";
 module.exports = {
   appId: appBundleId,
-  productName: "tea",
+  productName: "oss.app",
   asar: false,
   directories: { output: "dist" },
   files: ["electron/dist/electron.cjs", { from: "svelte/build", to: "" }],
