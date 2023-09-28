@@ -66,14 +66,14 @@
     </div>
   </div>
 {:else}
-  <button
+  <!-- <button
     class="border-gray text-gray h-[28px] w-[120px] rounded-sm border px-1 text-sm transition-all hover:bg-[#e1e1e1] hover:text-black"
     class:animate-pulse={authenticating}
     on:click={openGithub}
     on:dblclick={preventDoubleClick}
   >
     log in
-  </button>
+  </button> -->
 {/if}
 
 <style>
