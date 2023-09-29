@@ -169,7 +169,6 @@ V="$(node -p "require('./package.json').version")"
 tea gh release create "v$V"
 ```
 
-
 [`pkgx`]: https://github.com/pkgxdev/pkgx
 [`xc`]: https://xcfile.dev
 [discussion]: https://github.com/orgs/pkgxdev/discussions

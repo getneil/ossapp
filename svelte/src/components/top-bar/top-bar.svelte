@@ -17,15 +17,14 @@
     dev = await isDev();
   });
 
-  let imgsrc = 'Default'
+  let imgsrc = "Default";
 
   function hover() {
-    imgsrc = 'Hover'
+    imgsrc = "Hover";
   }
   function mouseout() {
-    imgsrc = 'Default'
+    imgsrc = "Default";
   }
-
 </script>
 
 <header
@@ -37,7 +36,12 @@
     <a href="/?tab=discover" data-testid="home-button">
       <div class="home-btn w-12 text-center text-2xl">
         <!-- svelte-ignore a11y-mouse-events-have-key-events -->
-        <img src="/images/home-btn/State={imgsrc}.svg" alt='home' on:mouseover={hover} on:mouseout={mouseout}/>
+        <img
+          src="/images/home-btn/State={imgsrc}.svg"
+          alt="home"
+          on:mouseover={hover}
+          on:mouseout={mouseout}
+        />
       </div>
     </a>
     <p class="text-gray px-2">{dev ? "dev" : "beta"}</p>
